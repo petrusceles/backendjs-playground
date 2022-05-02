@@ -1,6 +1,6 @@
 const express = require('express');
 const logger = require('morgan');
-const helper = require('./helpers/response');
+const helper = require('../respond-helpers/response');
 
 const router = require('./routes');
 
