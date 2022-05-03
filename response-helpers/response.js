@@ -28,7 +28,7 @@ module.exports = (req,res,next) => {
         res.respond(data, message, 201);
     };
 
-    res.respondDelete = (data = null, message = 'data deleted!') => {
+    res.respondDeleted = (data = null, message = 'data deleted!') => {
         res.respond(data,message, 200);
     };
 
