@@ -2,4 +2,4 @@
 
 Microservice API exercise
 
-Tech : Expressjs, PostgreSQL, Sequelize
+Main utility : Expressjs, PostgreSQL, Sequelize
