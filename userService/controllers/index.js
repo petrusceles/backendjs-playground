@@ -186,7 +186,7 @@ module.exports = {
                 return false;
             }
     
-            res.respondDelete(deletedUser);
+            res.respondDeleted(deletedUser);
         } catch (err) {
             res.respondServerError(err.message);
         }
