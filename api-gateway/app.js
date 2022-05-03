@@ -4,14 +4,14 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const errorHelpers = require('../response-helpers/response');
 
-const indexRouter = require('./routes');
+require('dotenv').config();
+const router = require('./routes');
 
 const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(errorHelpers);
-
-app.use('/api/v1', indexRouter);
+app.use('/api/v1', router);
 
 module.exports = app;

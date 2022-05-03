@@ -64,7 +64,7 @@ module.exports = {
             });
     
             if (!showProduct) {
-                res.respondBadRequest(`no product with id ${product_id}`);
+                res.respondNotFound(`no product with id ${product_id}`);
                 return false;
             }
     
